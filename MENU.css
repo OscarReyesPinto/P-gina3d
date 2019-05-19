@@ -1,0 +1,275 @@
+Body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family:font-family: 'Roboto', sans-serif;
+	border: 0;
+	outline: none;
+	min-height: 100vh;
+}
+
+/*Modal*/
+.content{
+	text-align: center;
+	background-color:none;
+	height: 80vh;
+}
+
+.mfp-hide{
+	display: none;
+}
+
+.mfp-content #videostory{
+	max-height: 100%;
+}
+
+.button{
+	padding: 20px 40px;
+	border-color: aliceblue;
+	font-size: 17px;
+	font-size: 1.7rem;
+	font-family: roboto;
+	font-weight: bold;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.button{
+	border: 2px solid white;
+	color: black;
+	text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+	border-radius: 50px;
+	background: white;
+	font-weight: bold;
+}
+
+.button .fa{
+	margin-left: 20px;
+}
+
+.button:hover, .button:focus{
+	background: transparent;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	outline: none;
+}
+
+.content h3{
+	padding-top: 7%;
+	justify-content: center;
+	color: #fff;
+	font-size: 35px;
+	font-family: roboto;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: 2px;	
+}
+
+.content h2{
+	color: #fff;
+	font-size: 25px;
+	font-family: roboto;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: 2px;	
+}
+
+.content h1{
+	padding-top: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-family: roboto;
+	line-height: 30px;
+	letter-spacing: 2px;	
+}
+
+.content h4{
+	color: #fff;
+	font-size: 15px;
+	font-family: roboto;
+	font-weight: italic;
+	letter-spacing: 1px;	
+}
+
+
+iframe{
+	margin-top: 20px;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	display: block;
+}
+
+button.mfp-close{
+	overflow: visible;
+	cursor: pointer;
+	background: white;
+	border: 0;
+	-webkit-appearance: none;
+	display: block;
+	outline: 0;
+	padding: 0;
+	z-index: 1046;
+	box-shadow: none;
+}
+
+.mfp-close{
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+	line-height: 44px;
+	position: absolute;
+	right: 40px;
+}
+
+/*Modal*/
+
+
+#check{
+	display: none;
+}
+
+#icono{
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+.barra{
+	background-color: #131211;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	transition: all .2s linear;
+	left: -300px;
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+.link{
+	background-color: #4C5E73;
+	padding: 20px;
+	font-size: 12pt;
+	transition: all .2s linear;
+	color: #f4f4f9;
+	border-bottom: 2px solid #222;
+	opacity: 0;
+	margin-top: 300px;
+}
+
+.link:hover{
+	background-color:#333F4D;
+}
+
+#check:checked ~ .barra{
+	transform: translateX(300px);	
+}
+
+#check:checked ~ .barra nav a .link{
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+
+video {
+	position: fixed;
+	min-width: auto;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -1;	
+}
+
+/*video*/
+.galeria{
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li{
+	margin: 5px;
+}
+
+.galeria img {
+	width: 150px;
+	height: 100%;
+}
+
+/*footer*/
+footer{
+	z-index: -1;
+	width: 100%;
+	font-family: roboto;
+}
+
+.footer-copy-redes{
+	width: 100%;
+	background: #000;
+	border-top: 3px solid #fff;
+}
+
+.main-copy-redes{
+	width: 98%;
+	max-width: 1000px;
+	padding: 15px 0;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-copy-redes .footer-copy{
+	width: 70%;
+	color: #fff;
+}
+
+.main-copy-redes .footer-redes{
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-copy-redes .footer-redes a {
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #fff;
+	color: #000;
+	text-align: center;
+}
+
+@media screen and (max-width: 750px){
+	.main-copy-redes .footer-copy{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.main-copy-redes .footer-redes{
+		width: 80%;
+		margin: auto;
+	}
+}
